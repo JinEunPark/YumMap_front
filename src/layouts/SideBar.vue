@@ -4,20 +4,22 @@
 			<ul class="side-list">
 				<div>
 					<li class="logo-container">
-						<img
-							class="logo"
-							src="../components/icons/yUM MAP.png"
-							alt="../components/icons/yUM MAP.pn"
-						/>
+						<a href="/home">
+							<img
+								class="logo"
+								src="../components/icons/yUM MAP.png"
+								alt="../components/icons/yUM MAP.pn"
+							/>
+						</a>
 					</li>
 					<li class="side-button">
-						<font-awesome-icon
-							:icon="['fas', 'magnifying-glass']"
-							class="sideicon"
-						/>
-						<div>
-							<a href=""> 지도탐색</a>
-						</div>
+						<a href="/maps">
+							<font-awesome-icon
+								:icon="['fas', 'magnifying-glass']"
+								class="sideicon"
+							/>
+							<div>지도탐색</div>
+						</a>
 					</li>
 					<li class="side-button">
 						<font-awesome-icon :icon="['far', 'map']" class="sideicon" />
@@ -56,6 +58,8 @@ export default {};
 	padding: 0;
 	margin: 0;
 	height: 100%;
+	background-color: #ffffff;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 #sidebar > nav {
@@ -63,12 +67,12 @@ export default {};
 	flex-direction: row;
 	justify-content: space-between;
 	width: 4rem;
-	border-right: 1px solid silver;
 	height: 100%;
 }
 .logo-container {
 	width: 100%; /* 부모 컨테이너의 크기에 맞게 설정 */
 	height: auto; /* 높이를 자동으로 조정하여 비율을 유지 */
+	margin-bottom: 1rem;
 	overflow: hidden; /* 부모 컨테이너를 벗어나는 이미지를 잘라냄 */
 }
 
